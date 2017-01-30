@@ -4,10 +4,15 @@ body {min-width:610px; height:100%; margin:0; padding:0; font:25px/35px Forum, c
 
 img {border:none}
 
-.wrapper {min-width:610px; width:100%; min-height:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center top; background-size:auto 100%}
+.wrapper {min-width:610px; width:100%; min-height:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center; background-size:auto 100%}
 .wrapper-inner {width:1220px; margin:0 auto; text-align:right; height:1043px}
 
-@media screen and (max-width:1220px) {
+@media screen and (max-width:1440px) {
+    .wrapper {background-size:cover}
+    .wrapper-inner {width:1000px}
+}
+
+@media screen and (max-width:1000px) {
     .wrapper {background:url(../images/bg-mobile.jpg) no-repeat center; background-size:cover}
     .wrapper-inner {width:610px}
 }
