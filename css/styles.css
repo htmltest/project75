@@ -1,0 +1,36 @@
+html {min-width:610px; height:100%}
+
+body {min-width:610px; height:100%; margin:0; padding:0; font:25px/35px Forum, cursive; color:#000; background:#dbe2ec}
+
+img {border:none}
+
+.wrapper {min-width:610px; width:100%; min-height:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center top; background-size:auto 100%}
+.wrapper-inner {width:1220px; margin:0 auto; text-align:right; height:1043px}
+
+@media screen and (max-width:1220px) {
+    .wrapper {background:url(../images/bg-mobile.jpg) no-repeat center; background-size:cover}
+    .wrapper-inner {width:610px}
+}
+
+.logo {line-height:0; padding:63px 19px 0 0}
+
+.title {text-transform:uppercase; font:118px/114px Cuprum, sans-serif; padding:179px 18px 0 0}
+
+.text {padding:33px 41px 0 0}
+
+form {margin:12px 45px 0 0; padding:0; width:468px; height:44px; position:relative; background:#fff; border-radius:10px; display:inline-block}
+
+.form-input {position:absolute; left:0; top:0; width:322px}
+.form-input input {border:none; font:20px/30px "PT Sans", sans-serif; color:#000; vertical-align:top; margin:0; padding:7px 16px; width:100%; height:44px; box-sizing:border-box; outline:none; border-radius:10px; background:none; -webkit-appearance:none}
+.form-input input::-webkit-input-placeholder {opacity:1; color:#b2b2b2}
+.form-input input::-moz-placeholder {opacity:1; color:#b2b2b2}
+.form-input input:-ms-input-placeholder {opacity:1; color:#b2b2b2}
+label.error {display:none !important}
+
+::-ms-clear {display:none}
+
+.form-submit {position:absolute; right:0; top:0; width:146px}
+.form-submit input {display:block; border-radius:10px; background:#f0dc38; margin:0; padding:0; outline:none; width:100%; border:none; height:44px; box-sizing:border-box; color:#000; text-align:center; text-transform:uppercase; font:bold 15px/44px "PT Sans", sans-serif; -webkit-appearance:none; cursor:pointer; letter-spacing:3px; transition:all .5s ease}
+.form-submit input:hover {background:#fff49a}
+
+.form-result {padding:12px 41px 0 0}
