@@ -15,3 +15,11 @@ $(document).ready(function() {
     });
 
 });
+
+$(window).on('load resize', function() {
+    if ($(window).width() > 1000) {
+        $('body').css({'font-size': 25 * $(window).height() / 1043 + 'px'});
+    } else {
+        $('body').css({'font-size': '20px'});
+    }
+});

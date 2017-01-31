@@ -1,41 +1,79 @@
 html {min-width:610px; height:100%}
 
-body {min-width:610px; height:100%; margin:0; padding:0; font:25px/35px Forum, cursive; color:#000; background:#dbe2ec}
+body {min-width:610px; height:100%; margin:0; padding:0; font:25px/1.4em Forum, cursive; color:#000; background:#dbe2ec; -webkit-text-size-adjust:100%}
+
+@media screen and (max-width:1000px) {
+    body {font-size:20px; line-height:30px}
+}
 
 img {border:none}
 
-.wrapper {min-width:610px; width:100%; min-height:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center; background-size:auto 100%}
-.wrapper-inner {width:1220px; margin:0 auto; text-align:right; height:1043px}
-
-@media screen and (max-width:1440px) {
-    .wrapper {background-size:cover}
-    .wrapper-inner {width:1000px}
-}
+.wrapper {min-width:610px; width:100%; min-height:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center; background-size:cover}
+.wrapper-inner {max-width:1220px; margin:0 auto; text-align:right; height:41.72em; padding:0 100px}
 
 @media screen and (max-width:1000px) {
     .wrapper {background:url(../images/bg-mobile.jpg) no-repeat center; background-size:cover}
-    .wrapper-inner {width:610px}
+    .wrapper-inner {max-width:none; width:610px; padding:0 0 40px 0; height:auto}
 }
 
-.logo {line-height:0; padding:63px 19px 0 0}
+.logo {line-height:0; padding:2.52em .76em 0 0}
+.logo img {height:2.72em}
 
-.title {text-transform:uppercase; font:118px/114px Cuprum, sans-serif; padding:179px 18px 0 0}
+@media screen and (max-width:1000px) {
+    .logo {height:68px}
+}
 
-.text {padding:33px 41px 0 0}
+.title {text-transform:uppercase; font:4.72em/.9661em Cuprum, sans-serif; padding:1.5169em 0.1525em 0 0}
 
-form {margin:12px 45px 0 0; padding:0; width:468px; height:44px; position:relative; background:#fff; border-radius:10px; display:inline-block}
+@media screen and (max-width:1000px) {
+    .title {font-size:85px; line-height:85px; padding:179px 18px 0 0}
+}
 
-.form-input {position:absolute; left:0; top:0; width:322px}
-.form-input input {border:none; font:20px/30px "PT Sans", sans-serif; color:#000; vertical-align:top; margin:0; padding:7px 16px; width:100%; height:44px; box-sizing:border-box; outline:none; border-radius:10px; background:none; -webkit-appearance:none}
+.text {padding:1.32em 1.64em 0 0}
+
+@media screen and (max-width:1000px) {
+    .text {padding:40px 41px 0 0}
+}
+
+form {margin:.48em 1.8em 0 0; padding:0; width:18.72em; height:1.76em; position:relative; background:#fff; border-radius:10px; display:inline-block}
+
+@media screen and (max-width:1000px) {
+    form {margin:12px 45px 0 0; padding:0; width:468px; height:44px}
+}
+
+.form-input {position:absolute; left:0; top:0; width:12.88em}
+.form-input input {border:none; font:.8em/1.5em "PT Sans", sans-serif; color:#000; vertical-align:top; margin:0; padding:7px 16px; width:100%; height:2.2em; box-sizing:border-box; outline:none; border-radius:10px; background:none; -webkit-appearance:none}
 .form-input input::-webkit-input-placeholder {opacity:1; color:#b2b2b2}
 .form-input input::-moz-placeholder {opacity:1; color:#b2b2b2}
 .form-input input:-ms-input-placeholder {opacity:1; color:#b2b2b2}
 label.error {display:none !important}
 
+@media screen and (max-width:1000px) {
+    .form-input {width:322px}
+    .form-input input {font-size:20px; line-height:30px; height:44px}
+}
+
 ::-ms-clear {display:none}
 
-.form-submit {position:absolute; right:0; top:0; width:146px}
-.form-submit input {display:block; border-radius:10px; background:#f0dc38; margin:0; padding:0; outline:none; width:100%; border:none; height:44px; box-sizing:border-box; color:#000; text-align:center; text-transform:uppercase; font:bold 15px/44px "PT Sans", sans-serif; -webkit-appearance:none; cursor:pointer; letter-spacing:3px; transition:all .5s ease}
+.form-submit {position:absolute; right:0; top:0; width:5.84em}
+.form-submit input {display:block; border-radius:10px; background:#f0dc38; margin:0; padding:0; outline:none; width:100%; border:none; height:2.93em; box-sizing:border-box; color:#000; text-align:center; text-transform:uppercase; font:bold .6em/2.93em "PT Sans", sans-serif; -webkit-appearance:none; cursor:pointer; letter-spacing:3px; transition:background .5s ease}
 .form-submit input:hover {background:#fff49a}
 
-.form-result {padding:12px 41px 0 0}
+@media screen and (max-width:1000px) {
+    .form-submit {width:146px}
+    .form-submit input {height:44px; font-size:15px; line-height:44px}
+}
+
+@media screen and (max-height:950px) {
+    .form-submit input {letter-spacing:2px}
+}
+
+@media screen and (max-height:900px) {
+    .form-submit input {letter-spacing:1px}
+}
+
+.form-result {padding:.48em 1.64em 0 0}
+
+@media screen and (max-width:1000px) {
+    .form-result {padding:12px 41px 0 0}
+}
